@@ -3,7 +3,7 @@
 @use "../top/boxes" as box;
 
 // Channels sidebar
-.sidebar_a4d4d9 {
+.sidebar_c48ade {
     position: absolute;
     bottom: 0;
     max-height: 60vh;
@@ -11,110 +11,110 @@
     @include box.windowBox(15px);
 
     // Title and channels
-    .container_ee69e0 {
+    .container__2637a {
         background: transparent;
 
         // Title
-        .header_fd6364 {
+        .header_f37cb1 {
             @include box.windowTitle();
             height: 48px;
 
-            .headerContent_fd6364 {
+            .headerContent_f37cb1 {
                 color: $white;
 
-                .flowerStar_ff7d90 {
+                .flowerStar__3e3b0 {
                     color: $white-overlay;
                 }
             }
         }
 
         // Server image banner
-        .animatedContainer_fd6364 {
+        .animatedContainer_f37cb1 {
             background: transparent;
             z-index: 2;
             border-radius: 8px 8px 0 0;
 
-            .bannerImage_fd6364::before {
+            .bannerImage_f37cb1::before {
                 display: none;
             }
         }
 
         // Server event
-        .container_fa295b {
+        .container__6e9be {
             background: $color-tooltip-2;
             --header-primary: #{$black};
             --header-secondary: #{$black};
             @include box.windowBox(15px);
 
             // Inner box
-            .channelNotice_a6cd4e {
+            .channelNotice_e2d7b8 {
                 border-bottom: none;
 
                 // Event Details button
-                .joinButton_a6cd4e {
+                .joinButton_e2d7b8 {
                     border-radius: 0;
                 }
             }
         }
 
         // Channels
-        .scroller_c43953 {
+        .scroller__629e4 {
             @include box.startMenuList;
 
             // Channel names
-            :is(.modeSelected_d8bfb3, .notInteractive_d8bfb3.modeConnected_d8bfb3, .notInteractive_d8bfb3.modeSelected_d8bfb3) {
-                .name_d8bfb3 {
+            :is(.modeSelected__2ea32, .notInteractive__2ea32.modeConnected__2ea32, .notInteractive__2ea32.modeSelected__2ea32) {
+                .name__2ea32 {
                     color: $white;
                 }
             }
 
             // Divider
-            .sectionDivider_c43953 {
+            .sectionDivider__629e4 {
                 background: transparent;
             }
 
             // Category
-            .containerDefault_a08117:not(:nth-child(2)) {
+            .containerDefault__29444:not(:nth-child(2)) {
                 @include box.startMenuDivider(7px);
             }
 
             // Channel
-            :is(.wrapper_d8bfb3, .container_b15955, .link_d8bfb3) {
+            :is(.wrapper__2ea32, .container_b15955, .link__2ea32) {
                 border-radius: 0;
 
                 // Channel actions
-                .actionIcon_f6f816 {
+                .actionIcon_c69b6d {
                     color: var(--xp-set-color);
                 }
 
                 // Voice channel member limit
-                .channelInfo_f6f816 {
+                .channelInfo_c69b6d {
                     --background-primary: lightgrey;
                     --background-tertiary: grey;
 
-                    .wrapper_a5bc92 {
+                    .wrapper__260e1 {
                         border-radius: 3px;
                     }
                 }
             }
 
             // User in voice channel
-            .content_cdc675 {
+            .content__07f91 {
                 border-radius: 0;
             }
 
             // Selected channel
-            .modeSelected_d8bfb3 {
+            .modeSelected__2ea32 {
                 // Channel actions
-                .actionIcon_f6f816 {
+                .actionIcon_c69b6d {
                     color: $white-overlay;
                 }
             }
 
             // Muted channel
-            .modeMuted_d8bfb3 {
-                .name_d8bfb3,
-                .icon_d8bfb3 {
+            .modeMuted__2ea32 {
+                .name__2ea32,
+                .icon__2ea32 {
                     color: grey;
                 }
             }
@@ -122,14 +122,14 @@
     }
 
     // DMs
-    .privateChannels_f0963d {
+    .privateChannels__35e86 {
         background: transparent;
 
         // Find conversation
-        .searchBar_f0963d {
+        .searchBar__35e86 {
             @include box.windowTitle;
 
-            .searchBarComponent_f0963d {
+            .searchBarComponent__35e86 {
                 background: transparent;
                 font-size: 14px;
                 line-height: $title-height;
@@ -141,12 +141,12 @@
         }
 
         // DMs and friends
-        .scroller_c47fa9 {
+        .scroller__99e7c {
             @include box.startMenuList;
         }
 
         // DMs category
-        .privateChannelsHeaderContainer_c47fa9 {
+        .privateChannelsHeaderContainer__99e7c {
             position: relative;
             @include box.startMenuDivider(2px);
         }
@@ -158,7 +158,7 @@
     }
 
     // Explore servers category list
-    & > .scrollerBase_eed6a8 {
+    & > .scrollerBase__99f8c {
         @include box.startMenuList;
         position: relative;
         border-radius: 8px 8px 0 0;
@@ -180,7 +180,7 @@
         }
 
         // Category
-        .container_e9f61e {
+        .container__91a9d {
             color: var(--channels-default);
             border-radius: 0;
 
@@ -192,7 +192,7 @@
                 margin-bottom: 10px;
             }
 
-            .layout_e9f61e {
+            .layout__91a9d {
                 border-radius: 0;
             }
         }

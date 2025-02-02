@@ -3,29 +3,29 @@
 @use "../top/boxes" as box;
 @use "../top/shortcutIcon" as ico;
 
-.baseLayer_d4b6c5.stop-animations {
+.baseLayer__960e4.stop-animations {
     opacity: 1 !important;
     transform: scale(1) !important;
 
-    .container_a4d4d9 {
+    .container_c48ade {
         filter: grayscale(0.8) brightness(0.5);
         backdrop-filter: brightness(1);
     }
 }
 
-.layers_d4b6c5 > .layer_d4b6c5 .animating_d4b6c5 {
+.layers__960e4 > .layer__960e4 .animating__960e4 {
     transform: none !important;
 }
 
-.layer_d4b6c5 {
+.layer__960e4 {
     background: transparent;
 
     // Settings menu
-    .standardSidebarView_c25c6d {
+    .standardSidebarView__23e6b {
         @include box.mainWindow;
 
         // Settings sidebar as separate window on left side
-        .sidebarRegion_c25c6d {
+        .sidebarRegion__23e6b {
             @include box.startMenuList;
             position: fixed;
             left: 60px;
@@ -34,23 +34,23 @@
             max-height: calc(100vh - 400px);
             @include box.windowHasPseudoTitle("Settings");
 
-            .sidebarRegionScroller_c25c6d {
+            .sidebarRegionScroller__23e6b {
                 background: var(--xp-bg-color);
 
-                .sidebar_c25c6d {
+                .sidebar__23e6b {
                     padding: 8px;
                     padding-right: 0;
 
-                    .separator_a0 {
+                    .separator_b3f026 {
                         background: transparent;
                         position: relative;
                         @include box.startMenuDivider(-2px);
                     }
 
-                    .item_a0 {
+                    .item_b3f026 {
                         border-radius: 0;
 
-                        &.selected_a0:not(.disabled_a0) {
+                        &.selected_b3f026:not(.disabled_b3f026) {
                             background: var(--background-modifier-selected);
                             color: $white;
                         }
@@ -60,38 +60,38 @@
         }
 
         // Settings contents
-        :is(.contentRegionShownSidebar_c25c6d, .contentRegion_c25c6d) {
+        :is(.contentRegionShownSidebar__23e6b, .contentRegion__23e6b) {
             justify-content: center;
 
             // Server setting roles sidebar
-            .sidebar_e87574 {
+            .sidebar_e29cd7 {
                 left: 0;
             }
 
             // Server setting roles main content
-            .customContainer_c25c6d,
-            .contentContainer_e8251c {
+            .customContainer__23e6b,
+            .contentContainer__91dc3 {
                 position: relative;
                 left: 0;
             }
 
             // Close settings button
-            .toolsContainer_c25c6d {
+            .toolsContainer__23e6b {
                 padding-top: 10px;
                 margin-right: 0;
                 position: absolute;
                 left: -80px;
                 height: 50px;
 
-                .container_df5532 {
-                    @include ico.makeIcon(50px, auto, ".closeButton_df5532");
+                .container_c2b141 {
+                    @include ico.makeIcon(50px, auto, ".closeButton_c2b141");
                     position: unset;
 
                     &::before {
                         content: "Close";
                     }
 
-                    .keybind_df5532 {
+                    .keybind_c2b141 {
                         display: none;
                     }
                 }
@@ -99,12 +99,12 @@
         }
     }
 
-    .pictureInPictureWindow_d0596b {
+    .pictureInPictureWindow__6341f {
         @include box.windowHasPseudoTitle("Stream");
         overflow: visible;
         border-radius: 0;
 
-        .pictureInPictureVideo_cadaa5 {
+        .pictureInPictureVideo_e4cb9a {
             border-radius: 0;
         }
     }
